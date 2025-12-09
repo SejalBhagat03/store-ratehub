@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String
+  address   String?
+  role      String   @default("user")
+  createdAt DateTime @default(now())
+
+  // Relations
+  ratings   Rating[]
+  stores    Store[]    // 👈 ADD THIS LINE (owner → stores)
+}
+
+model Store {
+  id        String   @id @default(uuid())
+  name      String
+  email     String?
+  address   String?
+  ownerId   String
+  createdAt DateTime @default(now())
+
+  // Relations
+  owner     User     @relation(fields: [ownerId], references: [id])
+  ratings   Rating[]
+}
+
+model Rating {
+  id        String   @id @default(uuid())
+  rating    Int
+  comment   String?
+  createdAt DateTime @default(now())
+
+  userId    String
+  storeId   String
+
+  // Relations
+  user      User   @relation(fields: [userId], references: [id])
+  store     Store  @relation(fields: [storeId], references: [id])
+}
