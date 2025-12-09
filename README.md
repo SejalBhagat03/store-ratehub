@@ -1,26 +1,25 @@
-# Store Rating Platform
+ Store Rating Platform
 
 A full-stack web application that allows users to rate stores and view store ratings.  
 The system includes three roles: **Admin**, **Normal User**, and **Store Owner**, each with different permissions and dashboards.
 
----
 
-## 🚀 Features
+🚀 Features
 
-### 🔑 Authentication
+ 🔑 Authentication
 - Login & Logout
 - Signup for Normal Users
 - Role-based access control
 - Password update functionality
 
-### 👤 Normal User
+👤 Normal User
 - View all stores
 - Search stores by name or address
 - Submit ratings (1–5)
 - Update previously submitted ratings
 - View overall rating of each store
 
-### 👑 Admin
+👑 Admin
 - Dashboard with key statistics:
   - Total Users
   - Total Stores
@@ -30,13 +29,12 @@ The system includes three roles: **Admin**, **Normal User**, and **Store Owner**
 - View & manage user list (with filtering and sorting)
 - View & manage store list (with filtering and sorting)
 
-### 🏪 Store Owner
+ 🏪 Store Owner
 - View users who rated their store
 - See store’s average rating
 
----
 
-## 🛠️ Tech Stack
+🛠️ Tech Stack
 
 ### **Frontend**
 - React + Vite
@@ -44,16 +42,8 @@ The system includes three roles: **Admin**, **Normal User**, and **Store Owner**
 - TailwindCSS
 - shadcn/ui components
 - React Router
-
-### **Other Libraries**
-- Radix UI primitives
-- React Hook Form + Zod validation
-- React Query for data fetching
-- Lucide Icons
-
----
-
-## 📂 Folder Structure
+  
+📂 Folder Structure
 src/
 components/
 pages/
@@ -63,9 +53,7 @@ services/
 utils/
 public/
 
----
-
-## 📦 Installation
+ 📦 Installation
 
 ```bash
 # Install dependencies
@@ -73,3 +61,5 @@ npm install
 
 # Run development server
 npm run dev
+
+I WILL DEPLOY IT SOON .....
