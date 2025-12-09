@@ -1,4 +1,6 @@
- Store Rating Platform
+Store Rating Platform
+Demo video:
+https://github.com/SejalBhagat03/store-ratehub/issues/1#issue-3712146600
 
 A full-stack web application that allows users to rate stores and view store ratings.  
 The system includes three roles: **Admin**, **Normal User**, and **Store Owner**, each with different permissions and dashboards.
